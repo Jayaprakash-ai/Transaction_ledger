@@ -169,7 +169,7 @@ export default function PaymentsPage() {
         </div>
       </div>
 
-      {/* Transaction History Ledger Data Table */}
+      
       <div className="bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden">
         <div className="px-6 py-4 border-b border-slate-100 bg-slate-50/50">
           <h2 className="text-sm font-bold text-slate-700 tracking-tight">Ledger Logs History</h2>

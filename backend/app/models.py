@@ -74,11 +74,9 @@ def create_transaction(db:Session,sender_id: str, receiver_id:str,amount:float):
 
 
 def get_transactions(db:Session):
-    """Return all transaction."""
     return db.query(Transaction).all()
 
 def get_customer_transactions(db : Session, customer_id:str):
-    "Returing transaction of single customer"
     customer = db.query(Customer).filter_by(customer_id=customer_id).first()
     if not customer:
         raise ValueError("Customer not found")

@@ -5,14 +5,11 @@ export default function HomeRouteController() {
   const router = useRouter();
 
   useEffect(() => {
-    // Read user authentication status from browser session storage
     const session = sessionStorage.getItem("userSession");
 
     if (session) {
-      // 1. If authenticated, route them instantly to our clean profile panel
       router.replace("/profile");
     } else {
-      // 2. If no session exists, push them cleanly to the login viewport
       router.replace("/login");
     }
   }, [router]);

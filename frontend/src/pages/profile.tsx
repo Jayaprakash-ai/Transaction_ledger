@@ -66,7 +66,7 @@ export default function ProfilePage() {
     <div className="p-8 max-w-xl mx-auto">
       <h1 className="text-3xl font-bold text-gray-900 mb-6">Account Details</h1>
       
-      {/* Profile Overview Card */}
+    
       <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-6">
         <h2 className="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Personal Information</h2>
         
@@ -90,7 +90,7 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      {/* Wallet Insight Card */}
+      
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
         <h2 className="text-lg font-semibold text-blue-900 mb-2">Wallet Insight</h2>
         <p className="text-sm text-blue-700 mb-4">Your current available account balance tracked in the master ledger:</p>

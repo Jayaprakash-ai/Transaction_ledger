@@ -14,7 +14,7 @@ class CustomerCreate(CustomerBase):
 
 class Customer(CustomerBase):
     id: int
-    customer_id: str   # always required in responses
+    customer_id: str   
     model_config = {"from_attributes": True}
 
 class TransactionBase(BaseModel):
