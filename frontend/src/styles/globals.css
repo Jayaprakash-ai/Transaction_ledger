@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* Explicitly tell Tailwind where your page files live */
+@source "../pages/**/*.{ts,tsx,js,jsx}";
+@source "../components/**/*.{ts,tsx,js,jsx}";
