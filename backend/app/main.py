@@ -5,7 +5,7 @@ from .routers import customers, payments
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Billing Engine")
+app = FastAPI(title="Billing Engine",redirect_slashes=False)
 
 
 app.add_middleware(

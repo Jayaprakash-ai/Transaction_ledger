@@ -4,7 +4,8 @@ from .. import crud,schemas,database,models
 
 router=APIRouter(prefix="/customers",tags=["customers"])
 
-@router.post("/")
+@router.post("")   
+@router.post("/")  
 def create_customer(customer:schemas.CustomerCreate, db: Session = Depends(database.get_db)):
     new_customer=crud.create_customer(db=db,customer=customer)
     return{
@@ -22,6 +23,7 @@ def list_customer(db: Session = Depends(database.get_db)):
 
 
 @router.post("/login")
+@router.post("/login/")
 def login_customer(payload: schemas.CustomerLogin, db: Session = Depends(database.get_db)):
     try:
         # Calls the dual verification checker we added to crud.py
