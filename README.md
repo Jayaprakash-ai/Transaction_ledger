@@ -2,7 +2,7 @@
 
 A robust, enterprise-grade banking application designed for secure inter-account fund transfers and client lifecycle tracking [INDEX]. Built using a fully decoupled modern architecture with an asynchronous backend API layer and a highly responsive, state-aware frontend dashboard interface [INDEX].
 
-🔗 **GitHub Repository:** https://github.com
+🔗 **GitHub Repository:** https://github.com/Jayaprakash-ai/Transaction_ledger
 
 We built a decoupled full-stack ledger application using Next.js (React) with TypeScript for the frontend, paired with a high-performance FastAPI (Python) REST API backend layer and a relational PostgreSQL database. The frontend utilizes React's state management  to capture inputs and display dynamic user interfaces like password eye-toggles, while Next.js handles file-based routing and global layout controls . TypeScript adds strict data formatting rules  to catch interface bugs instantly before compiling. On the backend, FastAPI maps data criteria to your PostgreSQL master tables using SQLAlchemy ORM, enforcing strict database atomicity to guarantee that transfer balances always roll back safely if a system failure occurs midway. Finally, we deployed native Bcrypt encryption to hash user passwords on disk and substituted plain auto-incrementing tracking keys with randomized cryptographic strings  to eliminate bulk scraping vulnerabilities. This architecture creates an incredibly fast, highly scalable, and completely secure financial ledger system that mirrors modern enterprise-grade software standards.
 
